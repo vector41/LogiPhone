@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/copy_number"
+        android:title="電話番号をコピー" />
+    <item
+        android:id="@+id/block"
+        android:title="ブロック" />
+    <item
+        android:id="@+id/delete_history"
+        android:title="履歴を削除" />
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Toolbar with Back Button and Search Icon -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/favorite_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="連絡先を選択"
+            android:layout_marginStart="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Search Icon -->
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="27dp"
+            android:textSize="20sp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"/>
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/search_icon"
+            android:contentDescription="Search" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- RecyclerView for Contacts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_for_all_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

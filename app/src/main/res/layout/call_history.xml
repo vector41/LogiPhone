@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Toolbar with Back Button, Contact Icon, and Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/call_history_send_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="back_image"
+             />
+
+        <!-- Contact Icon -->
+        <ImageView
+            android:id="@+id/contact_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_contact_default"
+            android:contentDescription="Contact Icon" />
+
+        <!-- Container for Title and Subtitle TextViews -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/selected_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="谷口 日野自動車"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Subtitle TextView (e.g., phone number) -->
+            <TextView
+                android:id="@+id/contact_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="その他・080-6366-8922"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Overflow Menu (3 dots) -->
+        <ImageView
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/bottom_nav_menu"
+            android:contentDescription="More Options" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Call History List -->
+    <include layout="@layout/call_history_item" />
+    <include layout="@layout/call_history_item" />
+    <include layout="@layout/call_history_item" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/call_history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp">
+        <!-- Bottom Call Button -->
+        <LinearLayout
+            android:id="@+id/call_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/green_button_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Call Icon -->
+            <ImageView
+                android:id="@+id/call_button"
+                android:layout_width="24dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_white_call"
+                android:contentDescription="call_button"
+                /> <!-- Replace with call icon -->
+
+
+            <!-- Call Button Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="音声通話を発信"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <!-- SMS Icon Button -->
+        <ImageView
+            android:id="@+id/sms_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_message"
+            android:background="@drawable/circle_border"
+            android:padding="8dp"
+            android:contentDescription="sms_button"
+            />
+        <!-- Replace with SMS icon drawable -->
+    </LinearLayout>
+
+
+
+</LinearLayout>

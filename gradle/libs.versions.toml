@@ -1,0 +1,34 @@
+[versions]
+agp = "8.3.1"
+javaAndroidWebsocketClient = "1.2.2"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+constraintlayout = "2.1.4"
+navigationFragment = "2.6.0"
+navigationUi = "2.6.0"
+okhttp = "4.12.0"
+okhttpVersion = "4.9.1"
+pusherJavaClient = "2.4.2"
+socketIoClient = "2.1.1"
+
+[libraries]
+java-android-websocket-client = { module = "tech.gusavila92:java-android-websocket-client", version.ref = "javaAndroidWebsocketClient" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-v491 = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttpVersion" }
+pusher-java-client = { module = "com.pusher:pusher-java-client", version.ref = "pusherJavaClient" }
+socket-io-client = { module = "io.socket:socket.io-client", version = "2.1.1" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+

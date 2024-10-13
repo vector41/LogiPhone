@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">LogiPhone</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="main_app_title">電話アプリをデフォルトとして設定してください</string>
+    <string name="main_app_content">電話アプリで通話の発着信を行うには、これをデフォルトの通話アプリに設定する必要があります。</string>
+    <string name="main_start_content">デフォルトとして設定してください</string>
+    <string name="set_default_title">電話 をデフォルトの電話アプリとして設定しますか?</string>
+    <string name="set_item_title">電話</string>
+    <string name="set_item_app_content">通話履歴へのアクセス権、SMSの送信権限が必要です</string>
+    <string name="set_item_phone_content">現在のデフォルト</string>
+    <string name="confirm_set_default">デフォルトに設定</string>
+    <string name="cancel_set_default">キャンセル</string>
+    <string name="alert_set_default_app">電話 現在のデフォルトが選択されました</string>
+    <string name="alert_set_default_phone">電話が選択されました</string>
+
+    <string name="title_favorite">お気に入り</string>
+    <string name="title_history">履歴</string>
+    <string name="title_contacts">連絡先</string>
+
+    <string name="contacts_search_setting1">電話帳</string>
+    <string name="contacts_search_setting1_share">共有電話帳</string>
+    <string name="contacts_search_setting1_phone">スマホのみ</string>
+    <string name="contacts_search_setting2">対象</string>
+    <string name="contacts_search_setting3">検索方法</string>
+    <string name="contacts_search_setting3_order">五十音</string>
+    <string name="contacts_search_setting3_prefecture">県別</string>
+    <string name="contacts_search_setting3_industry">業種別</string>
+
+    <string name="content_all">全て</string>
+    <string name="content_sms">メッセージ</string>
+    <string name="content_call_log">履歴を開く</string>
+    <string name="content_detail">詳細を開</string>
+    <string name="content_add">追加</string>
+    <string name="content_search">検索</string>
+    <string name="content_search_setting">検索設定</string>
+    <string name="content_company">会社</string>
+    <string name="content_person">個人</string>
+</resources>

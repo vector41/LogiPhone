@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    tools:context=".FavoriteListContainer">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/favorite_search"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/search_bar_background"-->
+<!--        android:paddingTop="6dp"-->
+<!--        android:paddingBottom="6dp"-->
+<!--        android:paddingStart="12dp"-->
+<!--        android:paddingEnd="12dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:contentDescription="@string/content_search"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/search_icon" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/favorite_search_keyword"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:autofillHints="@string/content_search"-->
+<!--            android:inputType="text"-->
+<!--            android:maxHeight="16dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textSize="16sp"-->
+<!--            android:paddingStart="5dp"-->
+<!--            android:paddingEnd="5dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            tools:ignore="LabelFor" />-->
+
+<!--        <ImageView-->
+<!--            android:contentDescription="@string/content_search"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/ic_voice_recognition" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/favorite_list_title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/title_favorite"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textColor="#6E6E6E"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/favorite_search"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBaseline_toBaselineOf="@id/favorite_add"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingEnd="16dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/favorite_add"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/content_add"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="#000000"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/favorite_search"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingEnd="16dp" />-->
+
+    <ListView
+        android:id="@+id/container_favorite_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFAFE"
+        android:divider="@android:color/transparent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:flow_horizontalAlign="start"
+        app:flow_verticalAlign="top" />
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation_favorite"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:menu="@menu/bottom_nav_menu"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/bottom_menu"-->
+<!--        android:paddingTop="12dp"-->
+<!--        android:paddingBottom="12dp"-->
+<!--        android:paddingStart="30dp"-->
+<!--        android:paddingEnd="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            tools:ignore="UseCompoundDrawables,UselessParent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="4dp"-->
+<!--                android:paddingBottom="4dp"-->
+<!--                android:minWidth="70dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="6dp"-->
+<!--                android:background="@drawable/rounded_background"-->
+<!--                android:backgroundTint="@color/bottom_active"-->
+<!--                android:gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:contentDescription="@string/title_favorite"-->
+<!--                    android:src="@drawable/ic_favorites" />-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/title_favorite"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            tools:ignore="UseCompoundDrawables">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/switch_recent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="4dp"-->
+<!--                android:paddingBottom="4dp"-->
+<!--                android:minWidth="70dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="6dp"-->
+<!--                android:gravity="center"-->
+<!--                android:onClick="navigateRecents">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:contentDescription="@string/title_history"-->
+<!--                    android:src="@drawable/ic_clock_outline" />-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/title_history"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            tools:ignore="UseCompoundDrawables">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="4dp"-->
+<!--                android:paddingBottom="4dp"-->
+<!--                android:minWidth="70dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="6dp"-->
+<!--                android:gravity="center"-->
+<!--                android:onClick="navigateContacts">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:contentDescription="@string/title_contacts"-->
+<!--                    android:src="@drawable/ic_contacts" />-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/title_contacts"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

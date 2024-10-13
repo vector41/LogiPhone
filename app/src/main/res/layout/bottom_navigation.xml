@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bottom_menu"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+
+        <LinearLayout
+            android:id="@+id/switch_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:minWidth="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/bottom_active"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/title_favorite"
+                android:src="@drawable/ic_favorites" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_switch_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_favorite"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <LinearLayout
+            android:id="@+id/switch_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:minWidth="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/title_history"
+                android:src="@drawable/ic_clock_outline" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_switch_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_history"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <LinearLayout
+            android:id="@+id/switch_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:minWidth="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/title_contacts"
+                android:src="@drawable/ic_contacts" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_switch_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_contacts"
+            android:textSize="12sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

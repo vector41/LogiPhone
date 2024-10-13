@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Toolbar with Back Button and Search Icon -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/sms_send_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <!-- Contact Icon -->
+
+        <ImageView
+            android:id="@+id/contact_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_contact_default" />
+
+        <!-- Title TextView -->
+
+        <TextView
+            android:id="@+id/selected_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先を 選択"
+            android:layout_marginStart="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Search Icon -->
+
+        <ImageView
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/bottom_nav_menu" />
+
+        <ImageView
+            android:id="@+id/selected_user_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:src="@drawable/ic_call" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:padding="16dp">
+    </LinearLayout>
+
+    <!-- Chat Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp"
+        android:padding="16dp">
+
+        <!-- Example message (Received) -->
+        <TextView
+            android:id="@+id/time_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="19:23"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/message_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="谷口 日野自動車 さんとテキスト メッセージで会話中 (SMS / MMS)"
+            android:textColor="@android:color/black"
+            android:background="@color/search_bar"
+            android:layout_gravity="start" />
+    </LinearLayout>
+
+    <!-- Bottom Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical">
+
+        <!-- File Attachment Icon -->
+        <ImageView
+            android:id="@+id/attach_file"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_attach_file"
+            android:contentDescription="Attach File" />
+
+        <!-- Image Attachment Icon -->
+        <ImageView
+            android:id="@+id/attach_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_attach_image"
+            android:contentDescription="Attach Image" />
+
+        <!-- Message Input with Emoji and Voice Recognition -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!-- Message Input -->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="テキスト メッセージ..."
+                android:background="@drawable/rounded_border"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionSend|flagNoExtractUi"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:scrollbars="vertical" />
+
+            <!-- Emoji Icon (Overlayed inside EditText) -->
+            <ImageView
+                android:id="@+id/emoji_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="40dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_emoji"
+                android:contentDescription="Emoji" />
+
+            <!-- Voice Recognition Icon (Overlayed inside EditText) -->
+            <ImageView
+                android:id="@+id/voice_recognition"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:padding="4dp"
+                android:src="@drawable/ic_voice_recognition"
+                android:contentDescription="Voice Recognition" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

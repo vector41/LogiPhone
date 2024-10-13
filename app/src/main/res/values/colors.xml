@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#007BFF</color>
+    <color name="success">#28A745</color>
+    <color name="info">#17A2B8</color>
+    <color name="warning">#FFC107</color>
+    <color name="danger">#DC3545</color>
+    <color name="secondary">#6C757D</color>
+    <color name="search_contact_setting">#DADADA</color>
+    <color name="search_bar">#EAEAF3</color>
+    <color name="bottom_menu">#EFEDF6</color>
+    <color name="bottom_active">#DDE2F9</color>
+</resources>

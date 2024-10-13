@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_search"
+        android:title="検索" />
+    <item
+        android:id="@+id/menu_show_input"
+        android:title="件名の入力欄を表示" />
+</menu>
+

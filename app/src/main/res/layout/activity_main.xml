@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/root_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_logo"
+                android:layout_width="244dp"
+                android:layout_height="244dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/start" />
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/main_app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_logo"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_app_title"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Detailed Information Text -->
+
+            <!-- Default Button -->
+            <TextView
+                android:id="@+id/main_app_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_app_title"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/main_app_content"
+                android:textColor="#666666"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/main_start_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="36dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="12dp"
+                android:rotationX="0"
+                android:text="@string/main_start_content"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1A73E7"
+                android:textSize="16sp"
+                app:cornerRadius="5dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- App Icon -->
+
+</LinearLayout>
